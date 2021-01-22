@@ -11,7 +11,7 @@ const Products = ({ products, onAddToCart }) => {
   return (
     <main className={classes.content}>
       <div className={classes.toolbar} />
-      <Grid container justify="space-between" spacing={4}>
+      <Grid container justify="space-between" spacing={5}>
         {products.map((product) => (
           <Grid item key={product.id} xs={12} sm={6} md={4} lg={3}>
             <Product product={product} onAddToCart={onAddToCart} />

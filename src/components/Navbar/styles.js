@@ -1,14 +1,14 @@
-import {  makeStyles, fade } from '@material-ui/core/styles';
+import { makeStyles, fade } from '@material-ui/core/styles';
 
 const drawerWidth = 0;
 
 export default makeStyles((theme) => ({
   appBar: {
     boxShadow: 'none',
-    borderBottom: '2px solid black',  
+    borderBottom: '2px solid black',
     [theme.breakpoints.up('sm')]: {
       width: `calc(100% - ${drawerWidth}px)`,
-      marginLeft: drawerWidth,
+      marginLeft: 'drawerWidth',
     },
   },
   title: {
@@ -16,19 +16,14 @@ export default makeStyles((theme) => ({
     alignItems: 'center',
     display: 'flex',
     textDecoration: 'none',
+    paddingLeft: '100px',
   },
   image: {
     marginRight: '10px',
   },
-  menuItem:{
+  menuItem: {
     marginRight: '20px',
     textDecoration: 'none',
-  },
-  menuButton: {
-    marginRight: theme.spacing(2),
-    [theme.breakpoints.up('sm')]: {
-      display: 'none',
-    },
   },
   grow: {
     flexGrow: 1,
@@ -68,5 +63,8 @@ export default makeStyles((theme) => ({
     [theme.breakpoints.up('md')]: {
       width: '20ch',
     },
+  },
+  button: {
+    paddingRight: '87px',
   },
 }));
