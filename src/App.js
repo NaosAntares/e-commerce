@@ -5,7 +5,6 @@ import { commerce } from './lib/commerce';
 import {
   Products, Navbar, Cart, Checkout, Homepage,
 } from './components';
-import './style.scss';
 
 function App() {
   const [mobileOpen, setMobileOpen] = React.useState(false);
